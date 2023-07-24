@@ -1,3 +1,4 @@
+# Programme for Birth Year 
 '''
 import datetime
 #dx1=int(input("Enter your Birth day:"))
@@ -13,12 +14,14 @@ y=yx-yx1
 print('your age is :',y)
 #print(x)
 ''''''
+#type directory
 ayu=['ayush','ansil','aditya','abhinav']
 print(type(ayu))
 
 ayu.append('akriti')
 print(ayu)
 '''
+#series code
 ''''
 i1=int(input("write any no.:"))
 l1=[]
