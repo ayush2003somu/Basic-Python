@@ -1,6 +1,15 @@
-a=input("name")
-i=int(input("no."))
+'''a1=input("Write any string:")
+a2=a1[::-1]
 
-a1=a[i]
-a2=a.replace(a1,"")
-print(a2)
+if a1==a2:
+    print("string is pellindrome")
+else:
+    print("string is not pellindrome")
+   '''
+
+def temp(a):
+    c=a+273
+    return print(c)
+a=int(input("temp in celcius"))
+temp(a)
+
