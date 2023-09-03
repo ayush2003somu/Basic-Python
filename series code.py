@@ -1,4 +1,4 @@
-
+'''
 i1=int(input("write any no.:"))
 l1=[]
 x=0
