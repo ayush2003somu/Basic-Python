@@ -75,22 +75,39 @@ i4=int(input("Write no. of special char: "))
 i3=int(input("Write no. of digit: "))
 i1=(i2+i3+i4)
 
-
+password=[]
 for i in range(0,i1):
     if i<i2:
 
         s1=random.choice(letters)
-        password+=s1
+        password.append(s1)
 
     elif i<(i3+i2):
         s2=random.choice(numbers)
-        password+=s2
+        password.append(s2)
         
     else:
         s3=random.choice(symbols)
-        password+=s3
+        password.append(s3)
 
+#random.shuffle(password)       ##this function can be used to suffle the passcode but this can only be used in python thats why we will choose another method to shuffle our passcode.
 print("Total character in your password is:",i1)
-print("Your password is :",password)        
+print("Your password is :",password)
 
+s7=[]
+for i3 in range(0,i1):
+     for i4 in range(0,i1):
+         
+         s7.append(i4)
 
+         password[i3]=password[i4]
+print(password)     
+
+'''
+p1=len(password)
+for i in range(1,p1+1):
+     s6=random.randint(0,p1)
+     password[i]=password[s6]
+
+      
+'''
