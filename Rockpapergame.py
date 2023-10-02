@@ -1,5 +1,5 @@
 import random
-s1=int(input("Enter your choice:1.rock ; 2.Paper ; 3.Scissor"))
+s1=int(input("Enter your choice:1.rock ; 2.Paper ; 3.Scissor:\n"))
 s2=random.randint(1,3)
 s4="you win"
 s5="you loose"

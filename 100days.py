@@ -64,6 +64,8 @@ for i in range(1,i1+1):
         print(i)
 
 '''
+'''
+# Random Password generator
 import random
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -90,10 +92,11 @@ for i in range(0,i1):
         s3=random.choice(symbols)
         password.append(s3)
 
-#random.shuffle(password)       ##this function can be used to suffle the passcode but this can only be used in python thats why we will choose another method to shuffle our passcode.
+random.shuffle(password)       ##this function can be used to suffle the passcode but this can only be used in python thats why we will choose another method to shuffle our passcode.
 print("Total character in your password is:",i1)
 print("Your password is :",password)
-
+'''
+'''
 s7=[]
 for i3 in range(0,i1):
      for i4 in range(0,i1):
@@ -101,13 +104,19 @@ for i3 in range(0,i1):
          s7.append(i4)
 
          password[i3]=password[i4]
-print(password)     
-
+print(password)
 '''
-p1=len(password)
-for i in range(1,p1+1):
-     s6=random.randint(0,p1)
-     password[i]=password[s6]
+#learning def
 
-      
-'''
+i1=int(input("Enter the no. to so how many times the list should be shown.:"))
+def ayush():
+    print("ayush Srivastava")
+    print("Ansil Srivastava")
+    print("Abhinav Srivastava")
+    print("Aditya srivastava")
+    print("Aditi Srivastava")
+    print("Akriti Srivastava")
+
+for i in range(1,i1+1):
+    print("This is the list of Gen Z :-")
+    ayush()
