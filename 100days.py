@@ -107,7 +107,7 @@ for i3 in range(0,i1):
 print(password)
 '''
 #learning def
-
+'''
 i1=int(input("Enter the no. to so how many times the list should be shown.:"))
 def ayush():
     print("ayush Srivastava")
@@ -120,3 +120,56 @@ def ayush():
 for i in range(1,i1+1):
     print("This is the list of Gen Z :-")
     ayush()
+    '''
+'''
+#learning the hangman project
+l1= ("h","e","l","l","o","w","o","r","l","d")
+l2=0
+l3=0
+while l2<10 and l3<15:
+    i1=input("guess the letter:")
+    if i1=="h"or:
+        l2+=1
+        print("you guessed right word")
+    else:
+            
+        l3= l3+1
+        print("wrong selection you got only",(15-l3) ,"chance left.")
+
+if l3==15:
+    print("you are hunged")
+elif l2==10 :
+     print("You won")
+     '''
+'''
+# Programm to guess a letter and replace it on the second list.(Part of project hangman Game)
+import random
+word_list=["ayusah","aditaya","ansail"]
+
+a1= random.choice(word_list)
+
+
+i1= input("enter Any letter:")
+l2=[]
+for letters in a1:
+    l2.append("_")
+print(l2)
+for i in a1:
+    
+    if i==i1:
+        print("right")
+        
+    else:
+        print("wrong")
+i3=0
+for i5 in a1:
+    if i1==i5:
+
+        l2[i3]=i1
+    else:
+        i3+=1
+print(i3) 
+print(l2)           
+'''
+
+
