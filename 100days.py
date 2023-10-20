@@ -171,5 +171,21 @@ for i5 in a1:
 print(i3) 
 print(l2)           
 '''
+'''
+#Painting a wall with cans
 
+h1=int(input("Enter height of the wall:"))
+w1=int(input("Enter width of the wall:"))
+cover=int(input("Enter the coverage area per can:"))
+area=h1*w1
+cans=area//cover
+cans2=area/cover
+if (cans2-cans)==0:
+    print("No. of cans required to paint the wall is:",cans)
+else:
+    cans3= cans + (cans%cover)
+    print("No. of cans required to paint the wall is:",cans3)
+    
+    '''
+#ceaser ciper in nest file
 
