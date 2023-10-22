@@ -1,6 +1,6 @@
-'''
-#bill generator
 
+#bill generator
+'''
 s1=int(input("total bill:"))
 s2=int(input("How many people:"))
 s3=int(input("How much % tip you have to pay :"))
@@ -8,8 +8,9 @@ s4=s1+(s1*s3/100)
 print("each people have to pay:",s4/s2,("(including  tip)"))
 '''
 
-'''
+
 # finding average of list
+'''
 list_1=input("enter a list with spacing:").split()
 
 for i in range(0,len(list_1)):
@@ -22,9 +23,9 @@ print(th)
 print("average of list is:",th//len(list_1))
 
 '''
-'''
-#finding highest no. in list(user input)
 
+#finding highest no. in list(user input)
+'''
 list_1=input("enter a list with spacing:").split()
 
 for i in range(0,len(list_1)):
@@ -48,9 +49,9 @@ for i in range(0,101):
 
 print(th)        
 '''
-'''
-#Divisibility test fizz(3) buzz(5)  fizzbuzz(3 and 5)
 
+#Divisibility test fizz(3) buzz(5)  fizzbuzz(3 and 5)
+'''
 i1=int(input("Write a max no.:"))
 for i in range(1,i1+1):
     if i%15==0:
@@ -64,8 +65,9 @@ for i in range(1,i1+1):
         print(i)
 
 '''
-'''
+
 # Random Password generator
+'''
 import random
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -121,8 +123,9 @@ for i in range(1,i1+1):
     print("This is the list of Gen Z :-")
     ayush()
     '''
-'''
+
 #learning the hangman project
+'''
 l1= ("h","e","l","l","o","w","o","r","l","d")
 l2=0
 l3=0
@@ -141,8 +144,9 @@ if l3==15:
 elif l2==10 :
      print("You won")
      '''
-'''
+
 # Programm to guess a letter and replace it on the second list.(Part of project hangman Game)
+'''
 import random
 word_list=["ayusah","aditaya","ansail"]
 
@@ -171,9 +175,9 @@ for i5 in a1:
 print(i3) 
 print(l2)           
 '''
-'''
-#Painting a wall with cans
 
+#Painting a wall with cans
+'''
 h1=int(input("Enter height of the wall:"))
 w1=int(input("Enter width of the wall:"))
 cover=int(input("Enter the coverage area per can:"))
@@ -187,5 +191,32 @@ else:
     print("No. of cans required to paint the wall is:",cans3)
     
     '''
-#ceaser ciper in nest file
 
+#Learning Some Dictionaries
+'''
+i1=int(input("Enter the score of rahul:"))
+i2=int(input("Enter the score of arpit:"))
+i3=int(input("Enter the score of ashish:"))
+i4=int (input("Enter the score of rishabh:"))
+d1={"rahul":i1,
+    "arpit":i2,
+    "Ashish":i3,
+    "Rishabh":i4
+}
+
+d3={}
+
+for key in d1:
+    if d1[key]>90 :
+        d3[key]="outstanding"
+    elif d1[key]>80:
+        d3[key]="Exceeds Expecation"
+    elif d1[key]>70:
+        d3[key]="Acceptable"
+    else:
+        d3[key]="Fail"
+
+for keys in d3:
+    print(keys,"=",d3[keys])
+
+'''
