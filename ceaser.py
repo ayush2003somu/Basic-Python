@@ -26,15 +26,19 @@ if encrypt=="encode":
                     l4[i]=alphabet[l3+shift]
                     l3= -1
                     break
+            elif l2==" ":
+                l4[i]=l2
+                l3= -1
+
             else:
                 continue
+                
        
     code=""
     for i2 in l4:
         code+=i2
     print("Your new code is:",code)     
 elif encrypt=="decode":
-
     s1=25+shift
     for i in range(0,l1):
         l2=l4[i]
@@ -42,6 +46,7 @@ elif encrypt=="decode":
             l3+=1
         
             if l2==i1:
+                   
                 if l3<shift:
                     l3=s1-l3
                     l4[i]=alphabet[l3-shift]
@@ -52,7 +57,12 @@ elif encrypt=="decode":
                     l4[i]=alphabet[l3-shift]
                     l3= -1
                     break
+            elif l2==" ":
+                    
+                    l4[i]=l2
+                    l3= -1            
             else:
+                
                 continue
     code=""
     for i2 in l4:
