@@ -9,7 +9,7 @@ else:
 '''
 def temp(a):
     c=a+273
-    return print(c).
+    return print(c)
 a=int(input("temp in celcius"))
 temp(a)
 
