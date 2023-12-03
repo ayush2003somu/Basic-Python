@@ -220,3 +220,30 @@ for keys in d3:
     print(keys,"=",d3[keys])
 
 '''
+#Learning some function's and building calculator
+
+def add(a1,b1):
+    return a1+b1
+
+def multiply(a1,b1):
+    return a1*b1
+def divide(a1,b1):
+    return a1/b1
+def sub(a1,b1):
+    return a1-b1
+
+a1=int(input("Enter first no."))
+b1=int(input("ENter second no."))
+
+c1=int(input("Enter the operator: 1 '+',2 '-',3 '*',4 '/'"))
+
+if c1==1:
+    print(add(a1,b1))
+elif c1==3:
+   print( multiply(a1,b1)) 
+elif c1==2 :
+    print(sub(a1,b1))
+elif c1==4:
+   print( divide(a1,b1))
+else:
+    print("Wrong value entered")        
