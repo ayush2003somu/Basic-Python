@@ -221,7 +221,7 @@ for keys in d3:
 
 '''
 #Learning some function's and building calculator
-
+'''
 def add(a1,b1):
     return a1+b1
 
@@ -247,3 +247,19 @@ elif c1==4:
    print( divide(a1,b1))
 else:
     print("Wrong value entered")        
+
+   ''' 
+
+import os
+i1=int(input("Enter 0 to delete the folder:"))
+
+if i1==0:
+    o1=os.listdir("D:\Games\hi")
+    #print(o1)
+    for i in o1:
+       s1="D:\Games\hi\\"
+       s1=s1+i
+       os.remove(s1)
+       print("done removing")
+else:
+    print("saved Hi")    
