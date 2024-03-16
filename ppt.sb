@@ -1,0 +1,52 @@
+Sub CreatePhysiotherapyPresentation()
+    Dim pptApp As Object
+    Dim pptPres As Object
+    Dim slideIndex As Integer
+    
+    ' Create a new instance of PowerPoint
+    Set pptApp = CreateObject("PowerPoint.Application")
+    pptApp.Visible = True ' Make PowerPoint visible
+    
+    ' Create a new presentation
+    Set pptPres = pptApp.Presentations.Add
+    
+    ' Add slides
+    For slideIndex = 1 To 10
+        With pptPres.Slides.Add(slideIndex, ppLayoutText)
+            ' Add title and content
+            .Shapes(1).TextFrame.TextRange.Text = "Physiotherapy: Improving Quality of Life"
+            .Shapes(2).TextFrame.TextRange.Text = "Slide " & slideIndex & ": Placeholder text for physiotherapy content"
+            
+            ' Customize content based on slide number
+            Select Case slideIndex
+                Case 1
+                    .Shapes(2).TextFrame.TextRange.Text = "Physiotherapy is a branch of healthcare that utilizes physical techniques such as exercise, manual therapy, and education to improve patients' physical abilities and overall well-being."
+                Case 2
+                    .Shapes(2).TextFrame.TextRange.Text = "Common conditions treated by physiotherapists include musculoskeletal injuries, neurological disorders, and cardiopulmonary diseases."
+                Case 3
+                    .Shapes(2).TextFrame.TextRange.Text = "Physiotherapy interventions may include therapeutic exercises, joint mobilization, electrotherapy, and hydrotherapy, tailored to each patient's needs."
+                Case 4
+                    .Shapes(2).TextFrame.TextRange.Text = "The goals of physiotherapy include pain relief, improvement of mobility and function, prevention of disability, and rehabilitation after injury or surgery."
+                Case 5
+                    .Shapes(2).TextFrame.TextRange.Text = "Physiotherapists work in various settings, including hospitals, private clinics, sports facilities, and rehabilitation centers, collaborating with other healthcare professionals."
+                Case 6
+                    .Shapes(2).TextFrame.TextRange.Text = "Patients may be referred to physiotherapy for various reasons, such as recovering from surgery, managing chronic pain, or improving sports performance."
+                Case 7
+                    .Shapes(2).TextFrame.TextRange.Text = "In addition to treating existing conditions, physiotherapy emphasizes prevention through education, ergonomic advice, and lifestyle modifications."
+                Case 8
+                    .Shapes(2).TextFrame.TextRange.Text = "Physiotherapy techniques are evidence-based, with practitioners constantly updating their knowledge and skills to provide the best possible care."
+                Case 9
+                    .Shapes(2).TextFrame.TextRange.Text = "The field of physiotherapy continues to evolve, with advancements in technology, research, and interdisciplinary collaboration enhancing patient outcomes."
+                Case 10
+                    .Shapes(2).TextFrame.TextRange.Text = "In conclusion, physiotherapy plays a crucial role in restoring and maintaining physical function, promoting independence, and enhancing the quality of life for individuals of all ages."
+            End Select
+            
+            ' Add images (replace "image_path" with the actual file path)
+            .Shapes.AddPicture "image_path", msoFalse, msoCTrue, 100, 100, 400, 300 ' Adjust image position and size as needed
+        End With
+    Next slideIndex
+    
+    ' Clean up
+    Set pptPres = Nothing
+    Set pptApp = Nothing
+End Sub
