@@ -259,7 +259,7 @@ if i1==0:
     for i in o1:
        s1="D:\Games\hi\\"
        s1=s1+i
-       os.remove(s1)
+    #    os.remove(s1)
        print("done removing")
 else:
     print("saved Hi")    
